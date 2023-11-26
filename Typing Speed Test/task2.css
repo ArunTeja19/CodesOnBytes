@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Background color */
+    background-color: #2c3e50; 
+    /* Text color */
+    color: #ecf0f1; 
+}
+
+.container {
+    /* Container background color */
+    text-align: center;
+    background-color: #34495e; 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.quote-container {
+     /* Quote background color */
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 120px;
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+     /* Textarea background color */
+     /* Textarea text color */
+     color: #2c3e50; 
+    background-color: #ecf0f1;
+    transition: border-color 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #2980b9;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 18px;
+    color: #ecf0f1;
+}
+
+#timer.running {
+    color: #e74c3c;
+    animation: countdown 60s linear infinite alternate;
+}
+
+@keyframes countdown {
+    from {
+        color: #2ecc71;
+    }
+    to {
+        color: #e74c3c;
+    }
+}
+
+#result {
+    font-size: 20px;
+    color: #ecf0f1;
+    font-weight: bold;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+footer {
+    margin-top: 20px;
+    color: #ecf0f1;
+    font-size: 14px;
+}
